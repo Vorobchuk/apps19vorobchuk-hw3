@@ -18,7 +18,7 @@ public class DistinctDecorator extends SmartArrayDecorator {
         }
         for (int j = 0; j < arr.size(); j++) {
             for (int k = j + 1; k < arr.size(); k++) {
-                if (arr.get(k).toString().equals(arr.get(j).toString())) {
+                if (arr.get(k).equals(arr.get(j))) {
                     arr.remove(j);
                 }
             }
